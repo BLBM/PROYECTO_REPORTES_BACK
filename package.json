@@ -1,0 +1,1 @@
+{"name":"reportes_api","version":"1.0.0","description":"","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1","start":"node reportes_api.js"},"dependencies":{"axios":"^1.7.7","body-parser":"^1.20.3","cors":"^2.8.5","express":"^4.21.0","json2csv":"^6.0.0-alpha.2","parser":"^0.1.4","Parser":"^0.0.1","pg":"^8.13.0","reportes_api":"file:"}}
