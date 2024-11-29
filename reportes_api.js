@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const reportesRoutes = require('./routes/reportesRoutes');
 const loginRoutes = require('./routes/loginRoutes');
-
+const userRoutes = require('./routes/userRoutes')
 
 const app = express();
 const PORT = 7007;
@@ -14,7 +14,8 @@ app.use(bodyParser.json());
 
 // Usa las rutas importadas
 app.use(reportesRoutes);
-app.use(loginRoutes)
+app.use(loginRoutes);
+app.use(userRoutes)
 
 app.listen(PORT, () => {
     console.log(`Servidor escuchando en el puerto ${PORT}`);
