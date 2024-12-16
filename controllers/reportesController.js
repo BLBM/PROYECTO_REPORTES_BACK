@@ -52,6 +52,9 @@ exports.generarReporte = async (req, res) => {
               const regexNumeric = new RegExp(`\\?${param}::numeric`, 'g');
               const regexDate = new RegExp(`\\?${param}::date`, 'g');
 
+              //console.log(regexDate);
+              //console.log(sqlQuery);
+
               if (typeof valor === 'string' && regexVarchar.test(sqlQuery)) {
                   sqlQuery = sqlQuery.replace(regexVarchar, `'${valor}'`);
               } else if (typeof valor === 'number' && regexNumeric.test(sqlQuery)) {

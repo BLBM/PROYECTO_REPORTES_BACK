@@ -25,7 +25,7 @@ const client = new Client({
 const client = new Client({
     user: 'postgres',
     host: 'localhost',
-    database: 'desarrollo_sahagun',
+    database: 'desarrollo_sahaun',
     password: '1234',
     port: 5432,
 });
